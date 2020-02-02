@@ -1,0 +1,29 @@
+name: dhruvilp
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.5.6
+  provider: ^4.0.2
+  url_launcher: ^5.4.1
+  url_launcher_web: ^0.1.0+2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
