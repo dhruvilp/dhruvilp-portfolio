@@ -129,10 +129,23 @@ class _MobileLayoutState extends State<MobileLayout> with SingleTickerProviderSt
               Hobbies(),
             ],
           ),
-          Align(
-            alignment: Alignment.topRight,
-            child: IconButton(
-              padding: EdgeInsets.all(18.0,),
+      Positioned(
+        top: 0.0,
+        right: 0.0,
+        child: ButtonBar(
+          buttonPadding: EdgeInsets.all(10.0),
+          children: <Widget>[
+            FlatButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              onPressed: (){
+                launchURL(RESUME);
+              },
+              child: Text('Resume', style: Theme.of(context).textTheme.subhead,),
+              color: transparent,
+            ),
+            IconButton(
               splashColor: Theme.of(context).primaryColor,
               iconSize: 30.0,
               icon: themeMode.isDarkMode ? Icon(Icons.flash_off, color: white,) : Icon(Icons.flash_on, color: charcoal_light,),
@@ -140,7 +153,9 @@ class _MobileLayoutState extends State<MobileLayout> with SingleTickerProviderSt
                 themeMode.isDarkMode ? themeMode.setDarkMode(false) : themeMode.setDarkMode(true);
               },
             ),
-          ),
+          ],
+        ),
+      ),
         ],
       ),
       floatingActionButton: FloatingActionButton(

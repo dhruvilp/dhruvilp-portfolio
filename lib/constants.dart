@@ -39,6 +39,7 @@ const GITHUB_HANDLE = '@dhruvilp';
 const LINKEDIN_HANDLE = '/dhruvilpatel';
 const EMAIL = 'atdhruvilpatel@gmail.com';
 const EMAIL_LINK = 'mailto:atdhruvilpatel@gmail.com?Subject=Hello';
+const RESUME = 'https://dhruvilp.github.io/resume.pdf';
 
 const GITHUB_REPO_URL = 'https://github.com/dhruvilp?tab=repositories';
 const GITHUB_URL = 'https://github.com/dhruvilp/';
@@ -51,7 +52,7 @@ const JPMC_URL = 'https://www.jpmorganchase.com/';
 const ODYSSEY_URL = 'https://www.theodysseyonline.com/user/@dhruvil';
 const AUTHOR_SITE = 'http://dhruvilp.github.io/';
 
-const ITRIAGE_URL = 'https://github.com/itriage/itriage';
+const ITRIAGE_URL = 'https://github.com/etriage/etriage';
 const ONEAPP_URL = 'https://github.com/HackRU/OneAppFlutter';
 const DIANO_URL = 'https://github.com/dhruvilp/fiserv_wallet';
 

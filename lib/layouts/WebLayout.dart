@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'dart:ui';
 
 import '../colors.dart';
+import '../constants.dart';
 import '../theme_handler.dart';
 import 'package:dhruvilp/tabs/home/Home.dart';
 import 'package:dhruvilp/tabs/work/Work.dart';
@@ -77,16 +78,31 @@ class _WebLayoutState extends State<WebLayout> with SingleTickerProviderStateMix
             ],
             controller: _tabController,
           ),
-          Align(
-            alignment: Alignment.topRight,
-            child: IconButton(
-              padding: EdgeInsets.only(right: 18.0, top: 18.0,),
-              splashColor: white,
-              iconSize: 30.0,
-              icon: themeMode.isDarkMode ? Icon(Icons.flash_off, color: white,) : Icon(Icons.flash_on, color: charcoal_light,),
-              onPressed: (){
-                themeMode.isDarkMode ? themeMode.setDarkMode(false) : themeMode.setDarkMode(true);
-              },
+          Positioned(
+            top: 0.0,
+            right: 0.0,
+            child: ButtonBar(
+              buttonPadding: EdgeInsets.all(10.0),
+              children: <Widget>[
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  onPressed: (){
+                    launchURL(RESUME);
+                  },
+                  child: Text('Resume', style: Theme.of(context).textTheme.subhead,),
+                  color: transparent,
+                ),
+                IconButton(
+                  splashColor: Theme.of(context).primaryColor,
+                  iconSize: 30.0,
+                  icon: themeMode.isDarkMode ? Icon(Icons.flash_off, color: white,) : Icon(Icons.flash_on, color: charcoal_light,),
+                  onPressed: (){
+                    themeMode.isDarkMode ? themeMode.setDarkMode(false) : themeMode.setDarkMode(true);
+                  },
+                ),
+              ],
             ),
           ),
         ],
