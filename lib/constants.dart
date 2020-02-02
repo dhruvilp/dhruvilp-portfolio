@@ -97,7 +97,7 @@ const odysseyCompany = 'Odyssey at Rutgers University';
 const odysseyDate = 'Feb 2018 - May 2019 | Volunteer';
 const odysseyDescription = '• Contents include articles and poetry. Content subjects include Rutgers/College, Food, Psychology, Life, Technology, Fashion, and Relationship. So far, I have published 42+ listicles/ articles with total page views around 18K+ (Last Updated: 29 Jan. 2020).';
 
-const iTrTitle = 'iTriage';
+const iTrTitle = 'eTriage';
 const iTrBriefDescription = ' | Patient Tracking & Monitoring System';
 const iTrDescription = '• Built a cross-platform app for emergency responders to triage patients in mass-casualties.\n• Designed and developed according to responders need, HIPAA standards, and data security in mind.';
 const iTrAchievement = '• Regional Contest - First Place, Regional Overall - Fourth Place\n';
