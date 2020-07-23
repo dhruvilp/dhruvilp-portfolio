@@ -1,8 +1,10 @@
-# dhruvilp
+# dhruvilp-portfolio
 
-A new Flutter project.
+Web portfolio  :)
 
-## Getting Started
+---------------------------------------------------------------
+
+## Getting Started with Flutter
 
 This project is a starting point for a Flutter application.
 
